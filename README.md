@@ -41,7 +41,7 @@ Put in your best efforts to complete one of the three available challenge tiers.
     * Remove your old ORM file, as well as any references to it in `burgers_controller.js`. Replace those references with Sequelize's ORM methods.
 
 * When you finish, your site should function just like your last one:
-    ![1-Sequelized](Images/1-Sequelized.jpg) 
+    ![1-Sequelized](images/1-Sequelized.jpg) 
 
 #### Tier 2: Customer Associations (Challenge)
 
@@ -51,7 +51,7 @@ Put in your best efforts to complete one of the three available challenge tiers.
 
 * For example, you could make a site that logs the name of which Customer ate which Burger, where each Customer only gets one Burger. If you can't think of another type of association, try this one!
 
-    ![3-Associated](Images/3-Associated.jpg)
+    ![3-Associated](images/3-Associated.jpg)
 
 * If you do go select this tier, you must edit the handlebars files and CSS stylesheets to implement some sort of additional feature to the site. We don't want you to just connect two models and submit your project. Make your site do something relevant to this association.
 
