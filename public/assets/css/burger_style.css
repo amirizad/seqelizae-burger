@@ -1,0 +1,47 @@
+body{
+  background: url('../img/bg.jpg') repeat top left;
+  font-family: cursive;
+  color: #000066;
+}
+#header img{
+  width: 150px;
+  padding-top: 2%;
+}
+.v-spacer{
+  margin-bottom: 20px;
+}
+.btn{
+  min-width: 90px;
+}
+.well{
+  background-color: #eee;
+  border: 1px solid #bbb;
+  font-weight: bold;
+  margin-bottom: 10px;  
+}
+.devour{
+  margin-bottom: 10px;
+}
+.devoured .well{
+  background-color: #ccc; 
+  border: 1px solid #999;
+  color: #333;
+  font-weight: normal;
+}
+#b-form{
+  margin-bottom: 50px;
+}
+.footer {
+	background-color: rgba(102, 102, 102, 0.9);
+	color: #ccc;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	line-height: 40px;
+	border-top: 2px solid #000066;
+	text-align: center;	
+	font-size: 14px
+}
+.footer p{
+	margin: 0; 
+}

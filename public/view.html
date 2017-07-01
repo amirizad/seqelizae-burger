@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eat The Burger!</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/burger_style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="header" class="row v-spacer text-center">
+      <img src="assets/img/burger.png" alt="Burger" class="img-responsive center-block">
+      <h3>Eat-Da-Burger!!!</h3>
+    </div>
+    <div class="row v-spacer">
+      <div class="col-xs-6">
+        <form class="row" action="/1?_method=PUT" method="POST">
+          <div class="well well-sm well-info col-xs-8">text</div>
+          <button type="submit" class="btn btn-warning col-xs-2 col-xs-offset-1 devour">Devour it!</button>
+        </form>
+        <form class="row" action="/2?_method=PUT" method="POST">
+          <div class="well well-sm well-info col-xs-8">text</div>
+          <button type="submit" class="btn btn-warning col-xs-2 col-xs-offset-1 devour">Devour it!</button>
+        </form>
+      </div>
+      <div id="devoured" class="col-xs-5 col-xs-offset-1">
+        <div class="well well-sm">text</div>
+        <div class="well well-sm">text</div>
+        <div class="well well-sm">text</div>
+      </div>
+    </div>
+    <div id="b-form" class="row">
+      <form action="/" method="post" class="form-horizontal col-xs-6 col-xs-offset-3 text-center v-spacer">
+        <div class="form-group">
+          <input id="burgername" name="name" class="form-control input-lg" type="text" placeholder="Burger Name">
+        </div>
+        <div class="form-group">
+          <button id="submit" type="submit" class="btn btn-primary" disabled>Submit</button>
+        </div>
+        <strong>Enter a burger you want to eat &amp; Click the <mark>Submit</mark> button.</strong>
+      </form>
+      <form action="/delete" method="post" class="form-horizontal col-xs-6 col-xs-offset-3 text-center">
+        <div class="form-group">
+          <button id="delete" type="submit" class="btn btn-danger" disabled>Delete All Devoured Burgers</button>
+        </div>
+        <a class="btn btn-success" href="https://github.com/amirizad/eat_all_burgers" target="_blank">
+        <span class="fa fa-github"></span> Open in GitHub</a>
+      </form>
+    </div>
+  </div>
+	<div class="footer">
+		<div class="container">
+			<p class="text-center">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Amir Izadpanah</p>
+		</div>
+	</div>    
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="assets/script/script.js"></script>
+</body>
+
+</html>
