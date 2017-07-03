@@ -3,7 +3,7 @@ var db = require("../models");
 module.exports = function(app) {
 
   app.get("/", function(req, res) {
-    db.Burger.findAll({}).then(function(data){
+    db.Burger.findAll({ order: 'burger_name' }).then(function(data){
       var hbsObject = {
         burgers: data
       };
@@ -19,20 +19,20 @@ module.exports = function(app) {
     });
   });
 
-  app.post("/:id", function(req, res) {
+  app.put("/:id", function(req, res) {
     db.Burger.update({
       devoured: true,
       customer: req.body.cname
     }, {
       where: {
-        id: req.body.id
+        id: req.params.id
       }
     }).then(function() {
       res.redirect("/");
     });
   });
 
-  app.post("/delete", function(req, res) {
+  app.delete("/delete", function(req, res) {
     db.Burger.destroy({
       where: {
         devoured: true
