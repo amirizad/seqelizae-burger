@@ -31,6 +31,9 @@ body{
 #b-form{
   margin-bottom: 50px;
 }
+#deletefrm{
+	margin-bottom: 50px;
+}
 .footer {
 	background-color: rgba(102, 102, 102, 0.9);
 	color: #ccc;
